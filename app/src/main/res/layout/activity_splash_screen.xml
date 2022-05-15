@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:textAlignment="gravity"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="199dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:contentDescription="@string/app_name"
+        android:foregroundGravity="center_horizontal"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:text="@string/app_name"
+        android:textSize="34sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:text="NAVYUG"
+        android:textSize="24sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
+        android:text="SWACHHA BHARAT"
+        android:textSize="24sp" />
+
+</RelativeLayout>

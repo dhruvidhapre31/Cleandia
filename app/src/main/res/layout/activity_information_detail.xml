@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InformationDetail">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wasteType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/waste_type"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/waste_image_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/wasteType"
+                android:scaleType="fitXY"
+                android:padding="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="50dp"
+                app:srcCompat="@drawable/agricultural" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/wasteType"
+                android:layout_marginHorizontal="50dp"
+                android:background="@drawable/edittext_bg" />
+
+            <TextView
+                android:id="@+id/waste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/waste_image_detail"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/waste"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/waste_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/waste"
+                android:layout_marginHorizontal="20dp"
+                android:justificationMode="inter_word"
+                android:text="@string/waste_info"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/disposal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/waste_info"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/disposal_method"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/disposal_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/disposal"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:justificationMode="inter_word"
+                android:text="@string/disposal_content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

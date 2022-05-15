@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotificationDetail">
+
+    <ImageView
+        android:id="@+id/ngo_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ngo_logo" />
+
+    <TextView
+        android:id="@+id/ngo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ngo_logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ngo_name"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/ngo_name"
+        android:layout_marginVertical="15dp"
+        android:background="@color/apple_green"
+        android:elevation="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/event_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/event_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/event" />
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/event_icon"
+            android:text="@string/event"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/event_icon"
+            android:layout_below="@id/event_title"
+            android:text="@string/event_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/website_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_field"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/website_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/website" />
+
+        <TextView
+            android:id="@+id/website_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/website_logo"
+            android:text="@string/website"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/website_logo"
+            android:layout_below="@id/website_title"
+            android:text="@string/website_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/address_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/website_field"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/address_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/address" />
+
+        <TextView
+            android:id="@+id/address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/address_logo"
+            android:text="@string/address"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/address_logo"
+            android:layout_below="@id/address_title"
+            android:text="@string/ngo_address" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mail_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_field"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mail_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/mail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/mail_logo"
+            android:text="@string/mail"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/mail_logo"
+            android:layout_below="@id/mail_title"
+            android:text="@string/email_address" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail_field"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/contact_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:paddingHorizontal="1dp"
+            app:srcCompat="@drawable/contact" />
+
+        <TextView
+            android:id="@+id/contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/contact_logo"
+            android:text="@string/contact"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/contact_logo"
+            android:layout_below="@id/contact_title"
+            android:text="@string/contact_no" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/eventRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/register"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

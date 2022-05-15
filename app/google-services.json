@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "750091894198",
+    "project_id": "cleandia-545fe",
+    "storage_bucket": "cleandia-545fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750091894198:android:edac6ea4c9707280fed517",
+        "android_client_info": {
+          "package_name": "com.example.cleandia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750091894198-rllci9cvlupsf3t5png40uhkmkran5bv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwAdW4Xfutu_BodLx5tkKNN7J8WHsaYRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750091894198-rllci9cvlupsf3t5png40uhkmkran5bv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
